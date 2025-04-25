@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Rahman | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="prjt.css">
+</head>
+<body>
+  <header>
+    <i class="fas fa-bars menu-toggle" onclick="toggleSidebar()"></i>
+
+    <h1>Abdul Rahman</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="toggle-mode" onclick="toggleMode()"><i class="fa-solid fa-lightbulb"></i></button>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <a href="#about" onclick="toggleSidebar()">About</a>
+    <a href="#projects" onclick="toggleSidebar()">Projects</a>
+    <a href="#skills" onclick="toggleSidebar()">Skills</a>
+    <a href="#resume" onclick="toggleSidebar()">Resume</a>
+    <a href="#contact" onclick="toggleSidebar()">Contact</a>
+  </div>
+
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="abd.jpg" alt="Profile" class="profile-img" />
+    <p>I'm an aspiring full-stack web developer with a passion for building user-centric, dynamic web applications using HTML, CSS, JavaScript, Django, and ReactJS.</p>
+    <p>Feel free  to explore my repositories <a href="https://github.com/LUDBA1973" target="_blank" class="github-link">GitHub <i class="fab fa-github"></i></a> and connect with me on <a href="https://www.linkedin.com/in/abdul-rahman-m-490a83295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-link">LinkedIn  <i class="fab fa-linkedin"></i></a> .</p>
+   
+  
+  </section>
+  
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Football Bio Website</h3>
+        <p>A dynamic football-themed blog built using HTML, CSS, and JavaScript.</p>
+        <p>Explore player and club stats with interactive dropdowns and dynamic content updates.</p>
+      </div>
+      <div class="project-card">
+        <h3>Sweat Coins – Walk-to-Earn</h3>
+        <p>A fitness web app that rewards users with cryptocurrency for walking.</p>
+        <p>Features  an engaging UI</p>
+      </div>
+      <div class="project-card">
+        <h3>Movie Review & Auth System</h3>
+        <p>A Django-based platform where users can register, log in, add movies, and leave reviews.</p>
+        <p>Includes secure authentication, dynamic ratings</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <i class="fab fa-html5"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <p>CSS3</p>
+      </div>
+      
+      <div class="skill">
+        <i class="fa-brands fa-bootstrap"></i>
+        <p>Bootstrap</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js-square"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-react"></i>
+        <p>ReactJS</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-python"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-cogs"></i>
+        <p>Django</p>
+      </div>
+      
+      <!-- <div class="skill">
+        <i class="fab fa-github"></i>
+        <p>Git/GitHub</p>
+      </div>
+    </div> -->
+  </section>
+  
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Check out my detailed resume to learn more about my skills, experience, and education.</p>
+    <a href="abdul_resume1.pdf" download="Abdul_Rahman_Resume" class="resume-download-btn">Download Resume</a>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to connect, feel free to reach out!</p>
+    <form action="mailto:abdulrahman19703@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  
+    <div class="contact-info">
+      <p>Email: <a href="mailto:abdulrahman19703@gmail.com">abdulrahman19703@gmail.com</a></p>
+      <p>Phone: <a href="tel:+916369378712">+91 63693 78712</a></p>
+      <p>Location: Thanjavur, Tamil Nadu</p>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Abdul Rahman.</p>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("show");
+    }
+    function toggleMode() {
+      document.body.classList.toggle("light-mode");
+    }
+  </script>
+</body>
+</html>
